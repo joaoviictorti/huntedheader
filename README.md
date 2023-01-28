@@ -1,6 +1,6 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=header"/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=0000FF&size=32&center=true&vCenter=true&width=1000&height=30&lines=CSRFmap)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=0000FF&size=32&center=true&vCenter=true&width=1000&height=30&lines=huntedheader)](https://git.io/typing-svg)
 
 
 
@@ -17,13 +17,13 @@
 ---
 
 
-O huntedheader é uma ferramenta que tem o objetivo de verificar se é existente os cabeçalhos de segurança na resposta HTTP de uma url mencionada.
+O huntedheader é uma ferramenta que tem o objetivo de verificar se é existente os cabeçalhos de segurança numa resposta HTTP/HTTPS de uma url mencionada.
 
 Projetei o `huntedheader` e mantive um modelo consistentemente passivo para torná-lo útil para testadores de penetração.
 
 # Características
 
- - Gera payloads CSRF com foco em exploração de falsificação de requisições entre sites.
+ - Verificar se é existente os cabeçalhos de segurança numa resposta HTTP/HTTPS
 
 # Forma de utilização
 
