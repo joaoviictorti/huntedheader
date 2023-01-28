@@ -56,7 +56,7 @@ Arguments:
 huntedheader requer o **golang** instalado, para usar:
 
 ```sh
-go install -v github.com/huntedheader@latest
+go install -v github.com/joaoviictorti/huntedheader@latest
 ```
 
 # Executando huntedheader
