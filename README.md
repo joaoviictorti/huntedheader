@@ -4,7 +4,7 @@
 
 
 
-<h4 align="center"> Tool to generate payloads focused on CSRF </h4>
+<h4 align="center"> Responsibility of checking the security headers in an HTTP response </h4>
 
 
 <p align="center">
