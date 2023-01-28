@@ -1,4 +1,4 @@
-module huntedheader
+module github.com/joaoviictorti/huntedheader
 
 go 1.18
 

@@ -2,10 +2,10 @@ package argumentos
 
 import (
 	"fmt"
-	"huntedheader/headers"
 	"os"
 
 	"github.com/akamensky/argparse"
+	"github.com/joaoviictorti/huntedheader/headers"
 )
 
 func Banner() string {

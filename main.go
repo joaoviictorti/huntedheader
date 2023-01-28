@@ -1,7 +1,7 @@
 package main
 
 import (
-	args "huntedheader/argumentos"
+	args "github.com/joaoviictorti/huntedheader/argumentos"
 )
 
 func main() {
