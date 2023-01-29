@@ -21,23 +21,21 @@ func Banner() string {
 
 func Argumentos() {
 	parser := argparse.NewParser("Hunteheader", Banner())
-	var url *string = parser.String("u", "url", &argparse.Options{Required: false, Help: "Insert url", Default: "url"})
-	var file *string = parser.String("f", "file", &argparse.Options{Required: false, Help: "Insert file url", Default: "file"})
+	var url *string = parser.String("u", "url", &argparse.Options{Required: false, Help: "Insert url", Default: ""})
+	var file *string = parser.String("f", "file", &argparse.Options{Required: false, Help: "Insert file url", Default: ""})
 	err := parser.Parse(os.Args)
-	_ = url
-	_ = file
 	if err != nil {
 		fmt.Println(parser.Usage(err))
 		return
 	}
 	switch *url {
-	case "url":
+	case "":
 		break
 	default:
 		headers.Headermap(url)
 	}
 	switch *file {
-	case "file":
+	case "":
 		break
 	default:
 		headers.Arquivo(file)
