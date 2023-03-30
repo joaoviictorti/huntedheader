@@ -46,8 +46,8 @@ usage: Hunteheader [-h|--help] [-u|--url "<value>"] [-f|--file "<value>"]
 Arguments:
 
   -h  --help  Print help information
-  -u  --url   Insert url. Default: url
-  -f  --file  Insert file url. Default: file
+  -u  --url   Insert url. 
+  -f  --file  Insert file url.
 
 ```
 
