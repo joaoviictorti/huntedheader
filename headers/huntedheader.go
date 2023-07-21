@@ -5,12 +5,18 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"sync"
 	"time"
 
 	"github.com/fatih/color"
 )
 
-func Headermap(site *string) {
+func Headermap(site *string, wg *sync.WaitGroup, individual bool) {
+	defer func() {
+		if individual {
+			wg.Done()
+		}
+	}()
 	uri, err := http.Get(*site)
 	chaves := map[string]bool{
 		"Strict-Transport-Security": false,
@@ -44,8 +50,8 @@ func Headermap(site *string) {
 	}
 }
 
-func Arquivo(arquivo *string) {
-	readFile, err := os.Open(*arquivo)
+func FileRead(file *string, wg *sync.WaitGroup, value chan struct{}) {
+	readFile, err := os.Open(*file)
 	if err != nil {
 		fmt.Print("Erro")
 	}
@@ -57,6 +63,14 @@ func Arquivo(arquivo *string) {
 	}
 	readFile.Close()
 	for _, line := range lines {
-		Headermap(&line)
+		value <- struct{}{} // Tenta adquirir um "espaço" no semáforo (se estiver cheio, bloqueia)
+		wg.Add(1)
+		go func(url string) {
+			defer func() { <-value }() // Libera o semáforo após a conclusão da goroutine
+			Headermap(&url, wg, true)
+		}(line)
 	}
+
+	wg.Wait()
+
 }
