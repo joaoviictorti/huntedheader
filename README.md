@@ -3,7 +3,7 @@
 ![hunteheader](/img/hunterheader.png)
 
 <p align="center">
-	<a href="https://www.python.org/"><img src="https://img.shields.io/badge/made%20with-python-red"></a>
+	<a href="https://www.python.org/"><img src="https://img.shields.io/badge/made%20with-go-blue"></a>
 	<a href="#"><img src="https://img.shields.io/badge/platform-osx%2Flinux%2Fwindows-blueviolet"></a>
 	<a href="https://github.com/joaoviictorti/hunterheader/releases"><img src="https://img.shields.io/github/release/joaoviictorti/hunterheader?color=blue"></a>
 </p>
