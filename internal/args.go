@@ -1,11 +1,10 @@
-package argumentos
+package internal
 
 import (
 	"fmt"
 	"os"
 
 	"github.com/akamensky/argparse"
-	"github.com/joaoviictorti/huntedheader/headers"
 )
 
 func Banner() string {
@@ -29,6 +28,6 @@ func Argumentos() {
 		fmt.Println(parser.Usage(err))
 		return
 	}
-	headers.Run(url, file, *threads)
+	Run(url, file, *threads)
 
 }
