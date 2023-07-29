@@ -2,16 +2,23 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=0000FF&size=32&center=true&vCenter=true&width=1000&height=30&lines=huntedheader)](https://git.io/typing-svg)
 
+![hunteheader](/img/hunterheader.png)
 
+<p align="center">
+	<a href="https://www.python.org/"><img src="https://img.shields.io/badge/made%20with-python-red"></a>
+	<a href="#"><img src="https://img.shields.io/badge/platform-osx%2Flinux%2Fwindows-blueviolet"></a>
+	<a href="https://github.com/joaoviictorti/hunterheader/releases"><img src="https://img.shields.io/github/release/joaoviictorti/hunterheader?color=blue"></a>
+</p>
 
-<h4 align="center"> Responsibility of checking the security headers in an HTTP response </h4>
+<h4 align="center">Hunteheader verificar os cabeçalhos de segurança ausente em uma resposta HTTP / HTTPS</h4>
 
 
 <p align="center">
-  <a href="#características">Features</a> •
-  <a href="#instalação">Install</a> •
-  <a href="#forma-de-utilização">How to use</a> •
-  <a href="#executando-revshell">Usage</a>
+  <a href="#características">Características</a> •
+  <a href="#instalação">Instalação</a> •
+  <a href="#forma-de-utilização"> Forma de utilização</a> •
+  <a href="#detalhes">Detalhes</a> •
+  <a href="#executando-revmap">Executando revmap</a>  
 </p>
 
 ---
@@ -30,26 +37,11 @@ Projetei o `huntedheader` e mantive um modelo consistentemente passivo para torn
 ```sh
 huntedheader -u https://teste.com
 ```
-Isso exibirá a ajuda para a ferramenta. Aqui estão todos os switches que ele suporta:
-```yaml
-usage: Hunteheader [-h|--help] [-u|--url "<value>"] [-f|--file "<value>"]      
 
+# Detalhes
 
-    __                __           ____                   __
-   / /_  __  ______  / /____  ____/ / /_  ___  ____ _____/ /__  _____
-  / __ \/ / / / __ \/ __/ _ \/ __  / __ \/ _ \/ __ / __  / _ \/ ___/
- / / / / /_/ / / / / /_/  __/ /_/ / / / /  __/ /_/ / /_/ /  __/ /
-/_/ /_/\__,_/_/ /_/\__/\___/\__,_/_/ /_/\___/\__,_/\__,_/\___/_/
+![hunteheader](/img/help.png)
 
-
-
-Arguments:
-
-  -h  --help  Print help information
-  -u  --url   Insert url. 
-  -f  --file  Insert file url.
-
-```
 
 # Instalação
 
@@ -61,14 +53,7 @@ go install -v github.com/joaoviictorti/huntedheader@latest
 
 # Executando huntedheader
 
-```console
-huntedheader -u https://teste.com
-[28/01/2023 00:11:30] [X-Content-Type-Options] https://teste.com
-[28/01/2023 00:11:30] [Referrer-Policy] https://teste.com
-[28/01/2023 00:11:30] [Permissions-Policy] https://teste.com     
-[28/01/2023 00:11:30] [Strict-Transport-Security] https://teste.com
-
-```
+![hunteheader](/img/exec.png)
 
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=footer"/>
