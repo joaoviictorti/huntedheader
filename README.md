@@ -16,7 +16,7 @@
   <a href="#instalação">Instalação</a> •
   <a href="#forma-de-utilização"> Forma de utilização</a> •
   <a href="#detalhes">Detalhes</a> •
-  <a href="#executando-revmap">Executando line</a>  
+  <a href="#executando-hunterheader">Executando hunterheader</a>  
 </p>
 
 ---
