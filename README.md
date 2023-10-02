@@ -8,48 +8,48 @@
 	<a href="https://github.com/joaoviictorti/hunterheader/releases"><img src="https://img.shields.io/github/release/joaoviictorti/hunterheader?color=blue"></a>
 </p>
 
-<h4 align="center">Hunteheader verificar os cabeçalhos de segurança ausente em uma resposta HTTP / HTTPS</h4>
+<h4 align="center">Hunteheader check for missing security headers in an HTTP/HTTPS response</h4>
 
 
 <p align="center">
-  <a href="#características">Características</a> •
-  <a href="#instalação">Instalação</a> •
-  <a href="#forma-de-utilização"> Forma de utilização</a> •
-  <a href="#detalhes">Detalhes</a> •
-  <a href="#executando-hunterheader">Executando hunterheader</a>  
+  <a href="#características">Features</a> •
+  <a href="#instalação">Installation</a> •
+  <a href="#how-to-use"> How to use</a> •
+  <a href="#details">Details</a> •
+  <a href="#running-huntedheader">Running huntedheader</a>  
 </p>
 
 ---
 
 
-O huntedheader é uma ferramenta que tem o objetivo de verificar se é existente os cabeçalhos de segurança numa resposta HTTP/HTTPS de uma url mencionada.
+Huntedheader is a tool that aims to check whether security headers exist in an HTTP/HTTPS response from a mentioned url.
 
-Projetei o `huntedheader` e mantive um modelo consistentemente passivo para torná-lo útil para testadores de penetração.
+I designed `huntedheader` and maintained a consistently passive model to make it useful for penetration testers.
 
-# Características
+# Features
 
- - Verificar se é existente os cabeçalhos de segurança numa resposta HTTP/HTTPS
+ - Check whether security headers exist in an HTTP/HTTPS response.
 
-# Forma de utilização
+# How to use
 
 ```sh
 huntedheader -u https://teste.com
 ```
 
-# Detalhes
+# Details
 
 ![hunteheader](/img/help.png)
 
 
-# Instalação
+# Installation
 
-huntedheader requer o **golang** instalado, para usar:
+huntedheader requires **golang** installed, to use:
 
 ```sh
 go install -v github.com/joaoviictorti/huntedheader/cmd/hunterheader@latest
 ```
 
-# Executando huntedheader
+# Running huntedheader
 
 ![hunteheader](/img/exec.png)
 
