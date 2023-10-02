@@ -12,8 +12,8 @@
 
 
 <p align="center">
-  <a href="#características">Features</a> •
-  <a href="#instalação">Installation</a> •
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
   <a href="#how-to-use"> How to use</a> •
   <a href="#details">Details</a> •
   <a href="#running-huntedheader">Running huntedheader</a>  
