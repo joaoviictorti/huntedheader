@@ -5,7 +5,6 @@ Hunteheader check for missing security headers in an HTTP/HTTPS response
 <p align="left">
 	<a href="https://go.dev"><img src="https://img.shields.io/badge/made%20with-go-blue"></a>
 	<a href="#"><img src="https://img.shields.io/badge/platform-osx%2Flinux%2Fwindows-blueviolet"></a>
-	<a href="https://github.com/joaoviictorti/hunterheader/releases"><img src="https://img.shields.io/github/release/joaoviictorti/hunterheader?color=blue"></a>
 </p>
 
 ![hunteheader](/img/hunterheader.png)
